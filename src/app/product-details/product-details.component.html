@@ -1,11 +1,11 @@
 <h2>Product Details</h2>
 
-<div *ngIf="productId">
+<div *ngIf="product">
 	<h3>{{ product.name }}</h3>
 	<h4>{{ product.price | currency }}</h4>
 	<p>{{ product.description }}</p>
 </div>
 
 <div *ngIf="!product">
-	<h2>error</h2>
+	<h2>error : no product is matching your request </h2>
 </div>
